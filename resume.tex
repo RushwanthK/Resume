@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Rushwanth K
+% Two-page layout (Experience page 1, Internship page 2)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+% Packages
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\input{glyphtounicode}
+
+% ---------- PAGE ----------
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.4in}
+
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% Comfortable spacing (not cramped)
+\setlist[itemize]{itemsep=3pt, topsep=3pt}
+
+% Section style
+\titleformat{\section}
+{\vspace{6pt}\scshape\large\bfseries}
+{}{0em}{}
+[\titlerule \vspace{4pt}]
+
+% ---------- COMMANDS ----------
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\large#1} & #2 \\
+  \textit{#3} & \textit{#4}
+  \end{tabular*}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  #1 & #2
+  \end{tabular*}
+}
+
+% ==================================================
+\begin{document}
+% ==================================================
+
+% Header
+\begin{center}
+{\Huge \textbf{Rushwanth K}}\\
+Bangalore, Karnataka \\[6pt]
+\small
+\href{tel:+916363470830}{\faPhone\ +91-6363470830} ~
+\href{mailto:rushwanth13@gmail.com}{\faEnvelope\ rushwanth13@gmail.com} ~
+\href{https://www.linkedin.com/in/rushwanth-k-54a6a7200}{\faLinkedin\ LinkedIn} ~
+\href{https://github.com/RushwanthK}{\faGithub\ GitHub}
+\end{center}
+
+% =========================
+% PAGE 1 CONTENT
+% =========================
+
+% About Me
+\section{ABOUT ME}
+\small{
+Software Engineer passionate about building scalable web applications and solving real-world problems through technology. Experienced in developing full-stack applications using modern frameworks and databases, with a strong foundation in software design, debugging, and problem-solving. Continuously exploring emerging technologies, including AI-powered applications and integrations, to build smarter and more efficient solutions. In my professional experience, I support enterprise applications, troubleshoot production issues, and collaborate across teams in agile environments, which has strengthened my analytical thinking, adaptability, and ability to quickly learn new technologies.
+}
+
+% Projects
+\section{PROJECTS}
+\begin{itemize}[leftmargin=0in,label={}]
+
+\resumeProjectHeading
+{{\textbf{\large{\underline{Personal Portfolio Application}}}} $|$ Flask, React, PostgreSQL}{}
+\begin{itemize}
+\resumeItem{Designed and developed a full-stack personal finance and portfolio management platform using React, Flask, and PostgreSQL.}
+\resumeItem{Implemented JWT-based authentication and authorization to secure user access, with Flask REST APIs and SQLAlchemy used to handle application data and business logic.}
+\resumeItem{Designed relational database schemas with indexing and pagination to improve query performance as the application's transaction data grows.}
+\resumeItem{Containerized the frontend, backend, and PostgreSQL database using Docker and Docker Compose, with isolated networking, persistent volumes, and environment-specific configuration.}
+\resumeItem{Built automated backend tests using Pytest with a separate PostgreSQL test database to verify API behavior, authentication, validation, business rules, and database operations.}
+\resumeItem{Used Git for version control with a branch and pull request workflow, and set up GitHub Actions CI to validate backend code and React production builds on code changes and pull requests.}
+\resumeItem{Deployed the application using Vercel, Render, and Supabase PostgreSQL.}
+\end{itemize}
+
+\vspace{3pt}
+
+\resumeProjectHeading
+{{\textbf{\large{\underline{AI-Powered Pharmaceutical QMS}}}} $|$ React, FastAPI, LangGraph, Groq LLM}{}
+\begin{itemize}
+\resumeItem{Designed and developed an AI-assisted pharmaceutical Quality Management System (QMS) to automate customer complaint processing by extracting structured complaint data from unstructured text and PDF documents, reducing manual data entry and improving review efficiency.}
+\resumeItem{Built the application using React, Redux Toolkit, Material UI, FastAPI, and PostgreSQL, with REST APIs for complaint processing and storing complaint records in the database.}
+\resumeItem{Used LangGraph with Groq's Llama 3.3 70B model to extract complaint details from text and PDF files, and automatically generate severity, priority, and initial risk assessments.}
+\resumeItem{Developed an AI Copilot that lets users update complaint details using natural language, while keeping the rest of the complaint data unchanged.}
+\end{itemize}
+
+\vspace{3pt}
+
+
+\end{itemize}
+
+% Technical Skills
+\section{TECHNICAL SKILLS}
+\small
+\textbf{Programming Languages:} Python, JavaScript, SQL, C\raisebox{0.3ex}{\small ++} \\
+\textbf{Frontend:} ReactJS, Redux Toolkit, HTML, CSS, Material UI \\
+\textbf{Backend \& APIs:} Flask, FastAPI, SQLAlchemy, Flask-Migrate, REST APIs, JWT Authentication \\
+\textbf{Databases:} PostgreSQL, SQLite, Oracle SQL \\
+\textbf{Testing:} Pytest, Postman \\
+\textbf{DevOps \& Version Control:} Git, GitHub Actions, Docker, Docker Compose \\
+\textbf{Cloud \& Deployment:} Vercel, Render, Supabase \\
+\textbf{AI:} LangGraph, Groq \\
+\textbf{Enterprise Applications:} PeopleSoft, Workday FIN/PSA, Salesforce, Oracle APEX
+
+% =========================
+% PAGE BREAK HERE (as requested)
+% =========================
+\newpage
+
+% Certifications
+\section{CERTIFICATIONS/COURSES}
+$\hspace{0.1cm}$ {\href{https://catalog-education.oracle.com/ords/certview/sharebadge?id=9D21A5B0028E380C365667768308ED4A1108FEEC9AE757E977FA654F053029D7}{Oracle APEX Cloud Developer Certified Professional}} \hfill{Jan 2025}
+
+$\hspace{0.1cm}$ {\href{https://www.coursera.org/account/accomplishments/verify/I8N6E0IHIVHX}{Introduction to Data Analytics}} \hfill{Nov 2025}
+
+
+% Experience
+\section{EXPERIENCE}
+\begin{itemize}[leftmargin=0in,label={}]
+
+\resumeSubheading
+{Hitachi Digital Services}{Jan 2024 - May 2026}
+{Application Support \& Developer}{Bangalore, India}
+
+\begin{itemize}
+\resumeItem{Built an internal web tool using Oracle APEX and PL/SQL to track and debug application errors.}
+\resumeItem{Supported Peoplesoft and Workday FIN/PSA modules handling time, expense, and billing workflows.}
+\resumeItem{Analyzed production issues using SQL queries and tested fixes to maintain reliability.}
+\resumeItem{Collaborated with cross-functional teams during releases and enhancements.}
+\end{itemize}
+
+\end{itemize}
+
+
+% Internship
+\section{INTERNSHIP}
+\begin{itemize}[leftmargin=0in,label={}]
+
+\resumeSubheading
+{Hitachi Vantara}{Feb 2023 - Dec 2023}
+{Intern}{Bangalore, India}
+
+\begin{itemize}
+\resumeItem{Configured Salesforce features such as flows, validations, approval processes, reports, and dashboards for business needs.}
+\resumeItem{Developed Apex triggers and unit tests to automate backend business logic.}
+\resumeItem{Built small internal applications and learned end-to-end web application development using Oracle APEX.}
+\end{itemize}
+
+\end{itemize}
+
+% Education
+\section{EDUCATION}
+\begin{itemize}[leftmargin=0in,label={}]
+
+\resumeSubheading
+{RNSIT}{Aug 2019 - May 2023}
+{B.E - Information Science and Engineering - CGPA 8.56}{}
+
+\resumeSubheading
+{Sri Kumaran Children's Home Composite PU College}{Aug 2017 - Apr 2019}
+{PUC - PCMCs - 92\%}{}
+
+\resumeSubheading
+{Dayananda Sagar International School}{Jun 2004 - Mar 2017}
+{ICSE - 92\%}{}
+
+\end{itemize}
+
+\end{document}
